@@ -1,26 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Embermark Forgery — Ashton Tink</title>
-<meta name="description" content="Embermark Forgery is a smaller game project by Ashton Tink.">
-<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-<nav class="navbar"><a class="logo" href="/">ashton<span>.tink</span></a><div class="nav-links"><a class="active" href="/projects/">Projects</a><a href="/#latest">Latest</a><a class="" href="/about/">About</a></div></nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<main class="container"><section class="page-hero"><div class="section-label">// project / 02</div><h1><span>Embermark Forgery.</span></h1><p>A smaller game project created to learn, experiment and gain experience taking a game from an idea toward something that can actually be finished and released.</p><div class="tags" style="margin-top:24px"><span class="tag">In development</span><span class="tag">Godot</span><span class="tag">C#</span><span class="tag">Solo development</span></div><div class="meta"><div class="card"><span>Type</span><strong>Game</strong></div><div class="card"><span>Engine</span><strong>Godot</strong></div><div class="card"><span>Language</span><strong>C#</strong></div><div class="card"><span>Role</span><strong>Solo</strong></div></div></section>
-<section><div class="banner ember"><div class="banner-word">EMBERMARK</div></div><div class="grid2"><div class="stack">
-<div class="card prose"><div class="section-label">// overview</div><h2>Small enough to finish. Big enough to learn.</h2><p>Embermark Forgery exists for a practical reason: building a huge game like Aetheria is very different from finishing a smaller game.</p><p>This project gives me a smaller space to practise the complete development process — deciding what belongs, implementing mechanics, creating content, testing, fixing, polishing and working toward a release.</p></div>
-<div class="card prose"><div class="section-label">// purpose</div><h2>Learning through completion.</h2><p>Large projects can make it easy to spend months building foundations without reaching a playable result. Embermark pushes in the opposite direction by keeping the scope manageable and forcing decisions about priorities and boundaries.</p></div>
-<div class="card prose"><div class="section-label">// experimentation</div><h2>Trying ideas without endless scope.</h2><p>Mechanics can be tried, changed or removed as I learn what makes the game work. The important part is keeping the project small enough that experimentation doesn't become endless expansion.</p></div>
-<div class="card prose"><div class="section-label">// bigger_picture</div><h2>Experience for future projects.</h2><p>Planning, architecture, game feel, content pipelines, debugging and release preparation are skills that become increasingly important as projects grow.</p></div>
-</div><div class="stack">
-<div class="card prose"><div class="section-label">// technology</div><ul class="list"><li><strong>Engine:</strong> Godot</li><li><strong>Language:</strong> C#</li><li><strong>Development:</strong> Solo</li><li><strong>Focus:</strong> Complete game development</li><li><strong>Scope:</strong> Smaller than Aetheria</li></ul></div>
-<div class="card prose"><div class="section-label">// lessons</div><h2>What I'm practising.</h2><ul class="list"><li>Scoping a project realistically</li><li>Reusable game systems</li><li>Balancing code and content</li><li>Testing and iteration</li><li>Polishing a playable experience</li><li>Working toward release</li></ul></div>
-<div class="card prose"><div class="section-label">// relationship</div><h2>Before Aetheria.</h2><p>Embermark isn't intended to replace Aetheria. It is a smaller step that lets me practise shipping and learn from mistakes before applying those lessons to a much larger project.</p></div>
-</div></div></section>
-<section class="section"><div class="callout"><div class="section-label">// project_note</div><h2 style="margin:8px 0;font-size:1.4rem">A smaller project can teach bigger lessons.</h2><p>The point is to experience the parts of game development that only become obvious when you try to turn an idea into a complete game.</p></div><div class="button-row" style="margin-top:22px"><a class="button secondary" href="/projects/">← All projects</a><a class="button primary" href="https://github.com/T1nkiePlayz">GitHub ↗</a></div></section></main>
-<footer class="container footer"><div>© 2026 Ashton Tink</div><div class="footer-links"><a href="https://github.com/T1nkiePlayz">GitHub</a><span>·</span><a href="mailto:support@ashtontink.com">Contact</a><span>·</span><a href="https://me.ashtontink.com">About Me</a></div></footer>
-</body></html>
+    <title>Embermark Forgery — Ashton Tink</title>
+    <meta
+        name="description"
+        content="Embermark Forgery is a cozy-yet-tense 2D smithing game written in Rust and Bevy by Ashton Tink: heat the metal, strike on the beat, inscribe the mark."
+    >
+
+    <link rel="canonical" href="https://www.ashtontink.com/projects/embermark-forgery/">
+
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#07090d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ashton Tink">
+    <meta property="og:title" content="Embermark Forgery — Ashton Tink">
+    <meta
+        property="og:description"
+        content="Embermark Forgery is a cozy-yet-tense 2D smithing game written in Rust and Bevy by Ashton Tink: heat the metal, strike on the beat, inscribe the mark."
+    >
+    <meta property="og:url" content="https://www.ashtontink.com/projects/embermark-forgery/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="navbar">
+    <a class="logo" href="/">ashton<span>.tink</span></a>
+
+    <div class="nav-links">
+        <a class="nav-home" href="/">Home</a>
+        <a class="active" href="/projects/">Projects</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a class="nav-resume" href="https://me.ashtontink.com/" target="_blank" rel="noopener">Résumé&nbsp;↗</a>
+    </div>
+</nav>
+
+<main id="main" class="container">
+
+    <section class="page-hero">
+        <div class="section-label">// project / 02</div>
+        <h1><span>Embermark Forgery.</span></h1>
+        <p>
+            A cozy-yet-tense 2D smithing game written in Rust + Bevy. Heat
+            the metal, read the colour, strike on the beat and inscribe
+            living sigils into steel — then sell your work to a town that
+            remembers what you forge.
+        </p>
+
+        <div class="tags">
+            <span class="tag">Playable prototype</span>
+            <span class="tag">Rust</span>
+            <span class="tag">Bevy</span>
+            <span class="tag">Solo development</span>
+            <span class="tag">MIT</span>
+        </div>
+
+        <div class="meta">
+            <div class="card"><span>Type</span><strong>2D game</strong></div>
+            <div class="card"><span>Engine</span><strong>Bevy</strong></div>
+            <div class="card"><span>Language</span><strong>Rust</strong></div>
+            <div class="card"><span>Status</span><strong>Prototype · v0.2.0</strong></div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="banner ember">
+            <div class="banner-word">EMBERMARK</div>
+        </div>
+
+        <div class="grid2">
+
+            <div class="stack">
+
+                <div class="card prose">
+                    <div class="section-label">// overview</div>
+                    <h2 class="lead">Small enough to finish, big enough to learn.</h2>
+                    <p>
+                        Embermark Forgery exists for a practical reason:
+                        building a huge game like Aetheria is very different
+                        from finishing a smaller one. This project gives me a
+                        contained space to practise the complete development
+                        process — deciding what belongs, implementing
+                        mechanics, creating content, testing, fixing,
+                        polishing and working toward a release.
+                    </p>
+                    <p>
+                        The loop is deliberately short and physical: it is a
+                        game about one craft, done well, rather than a world
+                        full of systems nobody has time to build.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// the_loop</div>
+                    <h2>Heat, hammer, quench, inscribe.</h2>
+                    <ul class="list">
+                        <li><strong>Heat</strong> — hold <kbd>Space</kbd> on the bellows and watch the metal climb into its working band.</li>
+                        <li><strong>Hammer</strong> — tap on the beat; timing inside the green zone becomes the item's quality grade.</li>
+                        <li><strong>Quench</strong> — one precise hit to lock the work in, or ruin it.</li>
+                        <li><strong>Inscribe</strong> — draw an Embermark sigil into the finished steel.</li>
+                        <li><strong>Sell or keep</strong> — commissions have requirements, and the town remembers what you forge.</li>
+                    </ul>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// architecture</div>
+                    <h2>Engine-agnostic where it counts.</h2>
+                    <p>
+                        The simulation core — crafting rules, materials,
+                        blueprints, sigils — is deliberately kept free of Bevy
+                        imports, so the interesting logic can be tested
+                        without a window. <code>cargo test</code> runs 15
+                        headless tests over the simulation and its data.
+                    </p>
+                    <p>
+                        Tuning lives in plain JSON under
+                        <code>assets/data/</code>: materials, blueprints and
+                        marks are edited as data, not recompiled as code.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// documentation</div>
+                    <h2>Built in the open, step by step.</h2>
+                    <p>
+                        The repository ships two long-form documents:
+                        <strong>BUILD.html</strong>, a guided,
+                        milestone-by-milestone walkthrough of how the whole
+                        project was made — twelve steps from
+                        <code>cargo new</code> to a tested, playable game,
+                        each ending in a runnable checkpoint — and
+                        <strong>DESIGN.html</strong>, the full game design
+                        document that every module implements.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stack">
+
+                <div class="card prose">
+                    <div class="section-label">// technology</div>
+                    <ul class="list">
+                        <li><strong>Language:</strong> Rust (edition 2021)</li>
+                        <li><strong>Engine:</strong> Bevy</li>
+                        <li><strong>Data:</strong> JSON tuning files</li>
+                        <li><strong>Tests:</strong> 15 headless, no window needed</li>
+                        <li><strong>Tooling:</strong> clippy + rustfmt</li>
+                        <li><strong>License:</strong> MIT</li>
+                    </ul>
+                    <div class="button-row">
+                        <a class="button small" href="https://github.com/T1nkiePlayz" target="_blank" rel="noopener">
+                            GitHub ↗
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// why_rust</div>
+                    <h2>Rust, not Godot this time.</h2>
+                    <p>
+                        The first version of this project lived in a scene
+                        engine. Rewriting it in Rust + Bevy turned the game
+                        into a codebase I fully control — and made the
+                        borrow checker part of the design process rather than
+                        an afterthought.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// lessons</div>
+                    <h2>What I'm practising.</h2>
+                    <ul class="list">
+                        <li>Scoping a project realistically</li>
+                        <li>Separating simulation from rendering</li>
+                        <li>Data-driven tuning and content pipelines</li>
+                        <li>Testing logic that normally needs a game running</li>
+                        <li>Game feel: timing, feedback and sound</li>
+                        <li>Balancing code and content</li>
+                    </ul>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// relationship</div>
+                    <h2>Before Aetheria.</h2>
+                    <p>
+                        Embermark isn't intended to replace Aetheria. It is a
+                        smaller step that lets me practise shipping and learn
+                        from mistakes before applying those lessons to a much
+                        larger project — and it doubles as my Rust practice
+                        ground.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="callout">
+            <div class="section-label">// project_note</div>
+            <h2>A smaller project can teach bigger lessons.</h2>
+            <p>
+                The point is to experience the parts of game development that
+                only become obvious when you try to turn an idea into a
+                complete game — and to have something playable at the end of
+                it, rather than a folder of foundations.
+            </p>
+        </div>
+
+        <div class="button-row" style="margin-top: 22px">
+            <a class="button" href="/projects/">← All projects</a>
+            <a class="button primary" href="/projects/rust-handbook/">
+                Rust Handbook <span class="arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="container footer">
+    <div>© <span id="year">2026</span> Ashton Tink</div>
+
+    <div class="footer-links">
+        <a href="/projects/">Projects</a>
+        <span>·</span>
+        <a href="/about/">About</a>
+        <span>·</span>
+        <a href="/contact/">Contact</a>
+        <span>·</span>
+        <a href="https://github.com/T1nkiePlayz" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="mailto:support@ashtontink.com">support@ashtontink.com</a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

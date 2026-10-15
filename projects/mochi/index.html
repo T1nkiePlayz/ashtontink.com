@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mochi — Ashton Tink</title>
+    <meta
+        name="description"
+        content="Mochi is Ashton Tink's cross-platform desktop game launcher: a local-first library for games that already live on your computer, built with Tauri 2, Rust and React."
+    >
+
+    <link rel="canonical" href="https://www.ashtontink.com/projects/mochi/">
+
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#07090d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ashton Tink">
+    <meta property="og:title" content="Mochi — Ashton Tink">
+    <meta
+        property="og:description"
+        content="Mochi is Ashton Tink's cross-platform desktop game launcher: a local-first library for games that already live on your computer, built with Tauri 2, Rust and React."
+    >
+    <meta property="og:url" content="https://www.ashtontink.com/projects/mochi/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="navbar">
+    <a class="logo" href="/">ashton<span>.tink</span></a>
+
+    <div class="nav-links">
+        <a class="nav-home" href="/">Home</a>
+        <a class="active" href="/projects/">Projects</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a class="nav-resume" href="https://me.ashtontink.com/" target="_blank" rel="noopener">Résumé&nbsp;↗</a>
+    </div>
+</nav>
+
+<main id="main" class="container">
+
+    <section class="page-hero">
+        <div class="section-label">// project / 03</div>
+        <h1><span>Mochi.</span></h1>
+        <p>
+            Your games, your way. A cross-platform desktop game launcher
+            built around local control, flexible launch targets and
+            optional cloud metadata — one library for every game that
+            already lives on your computer.
+        </p>
+
+        <div class="tags">
+            <span class="tag">In development</span>
+            <span class="tag">Tauri 2</span>
+            <span class="tag">Rust</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">GPL-3.0</span>
+        </div>
+
+        <div class="meta">
+            <div class="card"><span>Type</span><strong>Desktop launcher</strong></div>
+            <div class="card"><span>Stack</span><strong>Tauri 2 + React</strong></div>
+            <div class="card"><span>Platforms</span><strong>Linux · macOS</strong></div>
+            <div class="card"><span>Status</span><strong>Early development</strong></div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="banner mochi">
+            <div class="banner-word">MOCHI</div>
+        </div>
+
+        <div class="grid2">
+
+            <div class="stack">
+
+                <div class="card prose">
+                    <div class="section-label">// overview</div>
+                    <h2 class="lead">One library, without replacing anything.</h2>
+                    <p>
+                        Mochi sits above the ecosystems you already use
+                        instead of replacing them. It gives you a single
+                        library for games living in Steam, Heroic, Epic,
+                        itch.io, Flatpak, Lutris, Bottles, Whisky/CrossOver,
+                        plain executables, scripts and apps.
+                    </p>
+                    <p>
+                        Installed games stay exactly where they are. Mochi
+                        discovers them, organises them and launches them
+                        through the launcher that owns them, so prefixes,
+                        overlays and authentication keep working.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// features</div>
+                    <h2>What it does.</h2>
+                    <ul class="list">
+                        <li><strong>Library:</strong> search across names, descriptions and categories with Ctrl/Cmd + K, sorting, and a "Continue playing" shelf.</li>
+                        <li><strong>Organise:</strong> favourites, tags, collections and smart filters — All, Favourites, Installed, Recently played, Unplayed, Most played, Running now.</li>
+                        <li><strong>Per-game page:</strong> playtime, metadata, screenshots and trailer, Steam achievements and mod management.</li>
+                        <li><strong>Decide what to play:</strong> a backlog (Want to play / Playing / Finished / Dropped), a wishlist, and "What should I play?" that picks by mood and time.</li>
+                        <li><strong>Quality of life:</strong> guided first-launch setup, themed confirmations, an in-app notification centre and desktop notifications.</li>
+                        <li><strong>Themes:</strong> a themed UI with your choice of look, stored per profile.</li>
+                    </ul>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// local_first</div>
+                    <h2>Local first, cloud optional.</h2>
+                    <p>
+                        The library, launching, playtime, themes and settings
+                        all work without an account and without a network.
+                        If you do sign in, cloud sync is optional and
+                        metadata-only — your installations never move.
+                    </p>
+                    <p>
+                        That decision shapes the rest of the design: there is
+                        no server in the critical path, and nothing stops
+                        working when the internet does.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stack">
+
+                <div class="card prose">
+                    <div class="section-label">// technology</div>
+                    <ul class="list">
+                        <li><strong>UI:</strong> React + TypeScript</li>
+                        <li><strong>Core:</strong> Tauri 2 + Rust</li>
+                        <li><strong>Platforms:</strong> Linux &amp; macOS, Steam Deck friendly</li>
+                        <li><strong>License:</strong> GPL-3.0</li>
+                        <li><strong>Status:</strong> Early development, releases on GitHub</li>
+                        <li><strong>Live site:</strong> mochi.ashtontink.com</li>
+                    </ul>
+                    <div class="button-row">
+                        <a class="button primary small" href="https://mochi.ashtontink.com/" target="_blank" rel="noopener">
+                            Visit mochi.ashtontink.com ↗
+                        </a>
+                        <a class="button small" href="https://github.com/T1nkiePlayz/Mochi" target="_blank" rel="noopener">
+                            GitHub ↗
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// platforms</div>
+                    <h2>Native where it matters.</h2>
+                    <p>
+                        OS-specific code lives in its own modules, and the UI
+                        asks the platform what it can do instead of assuming
+                        an OS. Linux packages ship as AppImage, deb and rpm;
+                        macOS ships as a DMG. Windows is not supported at the
+                        moment.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// verification</div>
+                    <h2>Verify before you run it.</h2>
+                    <p>
+                        Every release file carries a GPG signature and a
+                        GitHub build attestation, with SHA256SUMS.txt
+                        published alongside. macOS builds are ad-hoc signed
+                        only, so Gatekeeper asks on first launch — the site
+                        documents how to open it safely.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// the_website</div>
+                    <h2>Mochi has its own site.</h2>
+                    <p>
+                        Mochi-Website is the public site, documentation and
+                        signed-in account portal: downloads, a changelog read
+                        live from GitHub releases, accounts, cloud-sync
+                        settings and service keys. React 19, Vite, Tailwind
+                        and Supabase, MIT licensed.
+                    </p>
+                    <div class="button-row">
+                        <a class="button small" href="https://github.com/T1nkiePlayz/Mochi-Website" target="_blank" rel="noopener">
+                            Mochi-Website ↗
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="callout">
+            <div class="section-label">// project_note</div>
+            <h2>Early, but real.</h2>
+            <p>
+                Mochi is in early development: storage formats, features and
+                UI may change between versions, so treat your own backups as
+                the source of truth for your library. It's also the project
+                teaching me the most about shipping software people actually
+                install — packaging, signing, verification and documentation
+                included.
+            </p>
+        </div>
+
+        <div class="button-row" style="margin-top: 22px">
+            <a class="button" href="/projects/">← All projects</a>
+            <a class="button primary" href="https://mochi.ashtontink.com/" target="_blank" rel="noopener">
+                Try Mochi ↗
+            </a>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="container footer">
+    <div>© <span id="year">2026</span> Ashton Tink</div>
+
+    <div class="footer-links">
+        <a href="/projects/">Projects</a>
+        <span>·</span>
+        <a href="/about/">About</a>
+        <span>·</span>
+        <a href="/contact/">Contact</a>
+        <span>·</span>
+        <a href="https://github.com/T1nkiePlayz" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="mailto:support@ashtontink.com">support@ashtontink.com</a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

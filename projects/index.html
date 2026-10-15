@@ -1,23 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects — Ashton Tink</title>
-<meta name="description" content="Games, software projects and ideas built by Ashton Tink.">
-<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-<nav class="navbar"><a class="logo" href="/">ashton<span>.tink</span></a><div class="nav-links"><a class="active" href="/projects/">Projects</a><a href="/#latest">Latest</a><a class="" href="/about/">About</a></div></nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<main class="container"><section class="page-hero"><div class="section-label">// projects</div><h1>Things I've <span>made.</span></h1><p>Games, software projects and ideas in progress. Some are carefully planned long-term builds, while others are smaller ways of learning something new. The common thread is simple: I wanted to make them.</p></section>
-<section>
-<a class="banner aetheria" href="/projects/aetheria/" style="text-decoration:none"><div class="orb"></div><div class="banner-word">AETHERIA</div></a>
-<div class="card prose" style="margin-bottom:22px"><div class="section-label">01 / game · in development</div><h2 style="font-size:2rem;margin:10px 0 12px">Aetheria</h2><p>A massive multiplayer 2D top-down ARPG built around exploration, combat, progression and a world designed to support many different ways to play.</p><div class="tags" style="margin:18px 0 24px"><span class="tag">Godot</span><span class="tag">C#</span><span class="tag">Multiplayer</span><span class="tag">ARPG</span><span class="tag">2D</span></div><a class="button primary" href="/projects/aetheria/">Explore Aetheria <span class="arrow">→</span></a></div>
-<a class="banner ember" href="/projects/embermark-forgery/" style="text-decoration:none"><div class="banner-word">EMBERMARK</div></a>
-<div class="card prose"><div class="section-label">02 / game · in development</div><h2 style="font-size:2rem;margin:10px 0 12px">Embermark Forgery</h2><p>A smaller game project designed to give me experience taking a game from an idea toward something complete and release-sized.</p><div class="tags" style="margin:18px 0 24px"><span class="tag">Godot</span><span class="tag">C#</span><span class="tag">Game Development</span></div><a class="button primary" href="/projects/embermark-forgery/">Explore Embermark Forgery <span class="arrow">→</span></a></div>
-</section>
-<section class="section"><div class="grid2"><div class="card prose"><div class="section-label">// how_i_build</div><h2>Projects are a way to learn.</h2><p>I don't expect every project to become a finished product. Building something forces me to deal with structure, debugging, iteration, scope, documentation and decisions that only appear once a project becomes bigger than a prototype.</p><p>That is especially useful in game development, where code, design, art, systems and content all need to work together.</p></div><div class="card prose"><div class="section-label">// what's_next</div><h2>This list will grow.</h2><p>As new projects become substantial enough to share, they'll get their own pages here. Smaller tools, web projects and experiments can sit alongside the games.</p><a class="button secondary" href="https://github.com/T1nkiePlayz">Open GitHub ↗</a></div></div></section>
-<a href="/" style="display:inline-flex;margin:10px 0 70px;color:var(--muted);font:600 .65rem var(--mono);text-decoration:none">← Back to home</a></main>
-<footer class="container footer"><div>© 2026 Ashton Tink</div><div class="footer-links"><a href="https://github.com/T1nkiePlayz">GitHub</a><span>·</span><a href="mailto:support@ashtontink.com">Contact</a><span>·</span><a href="https://me.ashtontink.com">About Me</a></div></footer>
-</body></html>
+    <title>Projects — Ashton Tink</title>
+    <meta
+        name="description"
+        content="Everything Ashton Tink is building: the Aetheria and Embermark Forgery games, the Mochi launcher, the Rust and Java handbooks and more."
+    >
+
+    <link rel="canonical" href="https://www.ashtontink.com/projects/">
+
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#07090d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ashton Tink">
+    <meta property="og:title" content="Projects — Ashton Tink">
+    <meta
+        property="og:description"
+        content="Everything Ashton Tink is building: the Aetheria and Embermark Forgery games, the Mochi launcher, the Rust and Java handbooks and more."
+    >
+    <meta property="og:url" content="https://www.ashtontink.com/projects/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="navbar">
+    <a class="logo" href="/">ashton<span>.tink</span></a>
+
+    <div class="nav-links">
+        <a class="nav-home" href="/">Home</a>
+        <a class="active" href="/projects/">Projects</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a class="nav-resume" href="https://me.ashtontink.com/" target="_blank" rel="noopener">Résumé&nbsp;↗</a>
+    </div>
+</nav>
+
+<main id="main" class="container">
+
+    <section class="page-hero">
+        <div class="section-label">// projects</div>
+        <h1>Things I've <span>made.</span></h1>
+        <p>
+            Games, software and learning material — some carefully planned
+            long-term builds, others smaller ways of learning something
+            properly. The common thread is simple: I wanted to make them,
+            and almost all of them are usable today.
+        </p>
+    </section>
+
+
+    <!-- GAMES -->
+
+    <section>
+        <div class="section-heading category">
+            <div class="section-label">// games</div>
+            <h2 class="section-title">Worlds to get lost in.</h2>
+            <p>
+                Game development is the biggest part of my personal work —
+                one long-term world, one project built to actually ship.
+            </p>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="card project-card">
+                <div class="project-head">
+                    <div class="project-icon" aria-hidden="true">🌌</div>
+                    <div>
+                        <div class="project-number">01 / Game · long-term</div>
+                        <h3>Aetheria</h3>
+                    </div>
+                </div>
+
+                <p>
+                    A massive multiplayer 2D top-down ARPG built around
+                    exploration, combat, progression and a world designed to
+                    support many different ways to play. My largest and
+                    longest-running project.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Godot</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Multiplayer</span>
+                    <span class="tag">ARPG</span>
+                    <span class="tag">2D</span>
+                </div>
+
+                <div class="project-actions">
+                    <a class="button small" href="/projects/aetheria/">
+                        Project page <span class="arrow">→</span>
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="card project-card">
+                <div class="project-head">
+                    <div class="project-icon" aria-hidden="true">🔥</div>
+                    <div>
+                        <div class="project-number">02 / Game · playable</div>
+                        <h3>Embermark Forgery</h3>
+                    </div>
+                </div>
+
+                <p>
+                    A cozy-yet-tense 2D smithing game written in Rust +
+                    Bevy. Heat the metal, read the colour, strike on the beat
+                    and inscribe living sigils into steel, then sell your work
+                    to a town that remembers what you forge.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Rust</span>
+                    <span class="tag">Bevy</span>
+                    <span class="tag">2D</span>
+                    <span class="tag">Solo dev</span>
+                </div>
+
+                <div class="project-actions">
+                    <a class="button small" href="/projects/embermark-forgery/">
+                        Project page <span class="arrow">→</span>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- SOFTWARE -->
+
+    <section>
+        <div class="section-heading category">
+            <div class="section-label">// software</div>
+            <h2 class="section-title">Tools I use every day.</h2>
+            <p>
+                Applications rather than games — built because I wanted the
+                software itself to exist.
+            </p>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="card project-card">
+                <div class="project-head">
+                    <div class="project-icon" aria-hidden="true">🍡</div>
+                    <div>
+                        <div class="project-number">03 / Software · early development</div>
+                        <h3>Mochi</h3>
+                    </div>
+                </div>
+
+                <p>
+                    A cross-platform desktop game launcher that sits above
+                    the launchers you already use — Steam, Heroic, Lutris,
+                    itch.io, Flatpak and plain executables — with a local-first
+                    library, playtime tracking and optional cloud sync.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Tauri 2</span>
+                    <span class="tag">Rust</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">GPL-3.0</span>
+                </div>
+
+                <div class="project-actions">
+                    <a class="button small" href="/projects/mochi/">
+                        Project page <span class="arrow">→</span>
+                    </a>
+                    <a
+                        class="button small"
+                        href="https://mochi.ashtontink.com/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        mochi.ashtontink.com ↗
+                    </a>
+                    <a
+                        class="button small"
+                        href="https://github.com/T1nkiePlayz/Mochi"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub ↗
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="card project-card">
+                <div class="project-head">
+                    <div class="project-icon" aria-hidden="true">🌐</div>
+                    <div>
+                        <div class="project-number">04 / Software · live</div>
+                        <h3>Mochi Website</h3>
+                    </div>
+                </div>
+
+                <p>
+                    The public site, documentation and signed-in account
+                    portal for Mochi: features, downloads, a changelog read
+                    live from GitHub releases, plus accounts, service keys
+                    and cloud-sync settings.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">React 19</span>
+                    <span class="tag">Vite</span>
+                    <span class="tag">Tailwind</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">MIT</span>
+                </div>
+
+                <div class="project-actions">
+                    <a
+                        class="button small"
+                        href="https://mochi.ashtontink.com/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Visit site ↗
+                    </a>
+                    <a
+                        class="button small"
+                        href="https://github.com/T1nkiePlayz/Mochi-Website"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub ↗
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- LEARNING MATERIAL -->
+
+    <section>
+        <div class="section-heading category">
+            <div class="section-label">// learning_material</div>
+            <h2 class="section-title">Handbooks I wrote to learn.</h2>
+            <p>
+                Writing a handbook from zero is the fastest way I've found
+                to actually understand a language. Both are free, single-page
+                and dependency-free.
+            </p>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="card project-card">
+                <div class="project-head">
+                    <div class="project-icon" aria-hidden="true">🦀</div>
+                    <div>
+                        <div class="project-number">05 / Learning · live</div>
+                        <h3>Rust Handbook</h3>
+                    </div>
+                </div>
+
+                <p>
+                    <em>Rust from Zero</em> — a visual, deep-dive handbook
+                    from installing Rust through ownership, borrowing,
+                    lifetimes and fearless concurrency, all the way to unsafe
+                    FFI. 21 chapters, 88 annotated examples, a self-quiz.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Rust</span>
+                    <span class="tag">21 chapters</span>
+                    <span class="tag">88 examples</span>
+                    <span class="tag">No build step</span>
+                    <span class="tag">GPL-3.0</span>
+                </div>
+
+                <div class="project-actions">
+                    <a class="button small" href="/projects/rust-handbook/">
+                        Project page <span class="arrow">→</span>
+                    </a>
+                    <a
+                        class="button small"
+                        href="https://rust.handbook.ashtontink.com/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Read it ↗
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="card project-card">
+                <div class="project-head">
+                    <div class="project-icon" aria-hidden="true">☕</div>
+                    <div>
+                        <div class="project-number">06 / Learning · live</div>
+                        <h3>Java &amp; Kotlin Handbook</h3>
+                    </div>
+                </div>
+
+                <p>
+                    <em>Java &amp; Kotlin from Zero</em> — 32 chapters with
+                    equal weight on what Java does well and where Kotlin is
+                    simply better: JVM internals, virtual threads, null
+                    safety, coroutines, Flow and multiplatform.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">32 chapters</span>
+                    <span class="tag">138 examples</span>
+                    <span class="tag">Self-quiz</span>
+                </div>
+
+                <div class="project-actions">
+                    <a class="button small" href="/projects/java-handbook/">
+                        Project page <span class="arrow">→</span>
+                    </a>
+                    <a
+                        class="button small"
+                        href="https://java.handbook.ashtontink.com/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Read it ↗
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- SYSTEM & WEB -->
+
+    <section>
+        <div class="section-heading category">
+            <div class="section-label">// system_&_web</div>
+            <h2 class="section-title">The smaller, stranger things.</h2>
+            <p>
+                Configuration, websites and experiments that make the rest
+                of it possible.
+            </p>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="card project-card">
+                <div class="project-head">
+                    <div class="project-icon" aria-hidden="true">🐧</div>
+                    <div>
+                        <div class="project-number">07 / System</div>
+                        <h3>DotFiles</h3>
+                    </div>
+                </div>
+
+                <p>
+                    My personal Linux desktop, version controlled: Hyprland
+                    with Lua modules and DMS, Fish and Zsh, Kitty, Ghostty,
+                    Neovim on mini.nvim, Spicetify and Catppuccin theming
+                    across everything.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Linux</span>
+                    <span class="tag">Hyprland</span>
+                    <span class="tag">Neovim</span>
+                    <span class="tag">Catppuccin</span>
+                </div>
+
+                <div class="project-actions">
+                    <a
+                        class="button small"
+                        href="https://github.com/T1nkiePlayz/DotFiles"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub ↗
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="card project-card">
+                <div class="project-head">
+                    <div class="project-icon" aria-hidden="true">🧭</div>
+                    <div>
+                        <div class="project-number">08 / Website</div>
+                        <h3>www.ashtontink.com</h3>
+                    </div>
+                </div>
+
+                <p>
+                    This site. Static HTML and CSS with no framework, no
+                    build step and no tracking — published straight from
+                    GitHub Pages on a custom domain, and designed to match
+                    the résumé at me.ashtontink.com.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">GitHub Pages</span>
+                    <span class="tag">No build step</span>
+                </div>
+
+                <div class="project-actions">
+                    <a
+                        class="button small"
+                        href="https://github.com/T1nkiePlayz/www_website"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub ↗
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- HOW I BUILD -->
+
+    <section class="section">
+        <div class="grid2">
+
+            <div class="card prose">
+                <div class="section-label">// how_i_build</div>
+                <h2 class="lead">Projects are a way to learn.</h2>
+                <p>
+                    I don't expect every project to become a finished
+                    product. Building something forces me to deal with
+                    structure, debugging, iteration, scope, documentation
+                    and decisions that only appear once a project becomes
+                    bigger than a prototype.
+                </p>
+                <p>
+                    That is especially useful in game development, where
+                    code, design, art, systems and content all need to work
+                    together — and equally useful in a handbook, where
+                    writing down what you think you know exposes exactly
+                    where you don't.
+                </p>
+            </div>
+
+            <div class="card prose">
+                <div class="section-label">// what's_next</div>
+                <h2 class="lead">This list will grow.</h2>
+                <p>
+                    As new projects become substantial enough to share,
+                    they get their own pages here. Smaller tools, web
+                    projects and experiments sit alongside the games.
+                </p>
+                <div class="button-row">
+                    <a
+                        class="button"
+                        href="https://github.com/T1nkiePlayz"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Open GitHub ↗
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <a class="back-link" href="/">← Back to home</a>
+
+</main>
+
+
+<footer class="container footer">
+    <div>© <span id="year">2026</span> Ashton Tink</div>
+
+    <div class="footer-links">
+        <a href="/projects/">Projects</a>
+        <span>·</span>
+        <a href="/about/">About</a>
+        <span>·</span>
+        <a href="/contact/">Contact</a>
+        <span>·</span>
+        <a href="https://github.com/T1nkiePlayz" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="mailto:support@ashtontink.com">support@ashtontink.com</a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

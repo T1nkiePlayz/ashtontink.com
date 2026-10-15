@@ -1,26 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aetheria — Ashton Tink</title>
-<meta name="description" content="Aetheria is Ashton Tink's long-term multiplayer 2D ARPG project.">
-<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-<nav class="navbar"><a class="logo" href="/">ashton<span>.tink</span></a><div class="nav-links"><a class="active" href="/projects/">Projects</a><a href="/#latest">Latest</a><a class="" href="/about/">About</a></div></nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<main class="container"><section class="page-hero"><div class="section-label">// project / 01</div><h1><span>Aetheria.</span></h1><p>A long-term multiplayer 2D top-down ARPG built around exploration, combat, progression and a world that gives players room to choose how they want to play.</p><div class="tags" style="margin-top:24px"><span class="tag">In development</span><span class="tag">Godot</span><span class="tag">C#</span><span class="tag">Multiplayer</span></div><div class="meta"><div class="card"><span>Type</span><strong>2D ARPG</strong></div><div class="card"><span>Engine</span><strong>Godot</strong></div><div class="card"><span>Language</span><strong>C#</strong></div><div class="card"><span>Status</span><strong>Long-term</strong></div></div></section>
-<section><div class="banner aetheria"><div class="orb"></div><div class="banner-word">AETHERIA</div></div><div class="grid2"><div class="stack">
-<div class="card prose"><div class="section-label">// overview</div><h2>A world built to explore.</h2><p>Aetheria is my largest game-development project and a long-term attempt to build something much bigger than a traditional prototype. The goal is a multiplayer 2D ARPG where exploration, progression, combat, systems and the world itself all contribute to the experience.</p><p>Rather than treating the world as a sequence of fixed levels, I'm interested in creating a place that supports discovery, experimentation and reasons to return.</p></div>
-<div class="card prose"><div class="section-label">// world</div><h2>Exploration and systems.</h2><p>Procedural generation, different environments, transportation and environmental features are all areas of the world design. The project has to work at both large scale — regions, travel and world structure — and small scale, such as resources, encounters and interactable objects.</p></div>
-<div class="card prose"><div class="section-label">// gameplay</div><h2>Systems that connect.</h2><p>Character progression, combat, abilities, factions, exploration and world interactions are intended to influence one another. This makes architecture important: the code needs to stay understandable as new mechanics are added.</p></div>
-<div class="card prose"><div class="section-label">// multiplayer</div><h2>Shared exploration.</h2><p>Multiplayer is part of the project's direction from the beginning. That affects how game state, characters, interactions and persistence need to be structured, with the aim of making shared exploration feel natural while preserving meaningful individual progression.</p></div>
-</div><div class="stack">
-<div class="card prose"><div class="section-label">// technology</div><ul class="list"><li><strong>Engine:</strong> Godot</li><li><strong>Language:</strong> C#</li><li><strong>Format:</strong> 2D top-down</li><li><strong>Genre:</strong> Action RPG</li><li><strong>Networking:</strong> Multiplayer-focused</li><li><strong>Art:</strong> 2D / pixel-art influenced</li></ul></div>
-<div class="card prose"><div class="section-label">// learning</div><h2>Learning while building.</h2><p>Aetheria gives me a reason to study software architecture, object-oriented programming, game systems, persistence and networking while dealing with the practical problems of a growing codebase.</p></div>
-<div class="card prose"><div class="section-label">// long_term</div><h2>A project measured in years.</h2><p>The scope is ambitious, so development is about building solid foundations and learning how to manage scope rather than rushing through a feature checklist.</p></div>
-</div></div></section>
-<section class="section"><div class="callout"><div class="section-label">// project_note</div><h2 style="margin:8px 0;font-size:1.4rem">More than just a big game.</h2><p>Aetheria is also an opportunity to learn how to design, structure and maintain a large software project. Every system is teaching me something that can carry into future work.</p></div><div class="button-row" style="margin-top:22px"><a class="button secondary" href="/projects/">← All projects</a><a class="button primary" href="https://github.com/T1nkiePlayz">GitHub ↗</a></div></section></main>
-<footer class="container footer"><div>© 2026 Ashton Tink</div><div class="footer-links"><a href="https://github.com/T1nkiePlayz">GitHub</a><span>·</span><a href="mailto:support@ashtontink.com">Contact</a><span>·</span><a href="https://me.ashtontink.com">About Me</a></div></footer>
-</body></html>
+    <title>Aetheria — Ashton Tink</title>
+    <meta
+        name="description"
+        content="Aetheria is Ashton Tink's long-term multiplayer 2D top-down ARPG: exploration, combat, progression and a world built to be explored."
+    >
+
+    <link rel="canonical" href="https://www.ashtontink.com/projects/aetheria/">
+
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#07090d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ashton Tink">
+    <meta property="og:title" content="Aetheria — Ashton Tink">
+    <meta
+        property="og:description"
+        content="Aetheria is Ashton Tink's long-term multiplayer 2D top-down ARPG: exploration, combat, progression and a world built to be explored."
+    >
+    <meta property="og:url" content="https://www.ashtontink.com/projects/aetheria/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="navbar">
+    <a class="logo" href="/">ashton<span>.tink</span></a>
+
+    <div class="nav-links">
+        <a class="nav-home" href="/">Home</a>
+        <a class="active" href="/projects/">Projects</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a class="nav-resume" href="https://me.ashtontink.com/" target="_blank" rel="noopener">Résumé&nbsp;↗</a>
+    </div>
+</nav>
+
+<main id="main" class="container">
+
+    <section class="page-hero">
+        <div class="section-label">// project / 01</div>
+        <h1><span>Aetheria.</span></h1>
+        <p>
+            A long-term multiplayer 2D top-down ARPG built around
+            exploration, combat, progression and a world that gives players
+            room to choose how they want to play.
+        </p>
+
+        <div class="tags">
+            <span class="tag">In development</span>
+            <span class="tag">Godot</span>
+            <span class="tag">C#</span>
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Long-term</span>
+        </div>
+
+        <div class="meta">
+            <div class="card"><span>Type</span><strong>2D ARPG</strong></div>
+            <div class="card"><span>Engine</span><strong>Godot</strong></div>
+            <div class="card"><span>Language</span><strong>C#</strong></div>
+            <div class="card"><span>Status</span><strong>Long-term</strong></div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="banner aetheria">
+            <div class="orb"></div>
+            <div class="banner-word">AETHERIA</div>
+        </div>
+
+        <div class="grid2">
+
+            <div class="stack">
+
+                <div class="card prose">
+                    <div class="section-label">// overview</div>
+                    <h2 class="lead">A world built to explore.</h2>
+                    <p>
+                        Aetheria is my largest game-development project and a
+                        long-term attempt to build something much bigger than
+                        a traditional prototype. The goal is a multiplayer
+                        2D ARPG where exploration, progression, combat,
+                        systems and the world itself all contribute to the
+                        experience.
+                    </p>
+                    <p>
+                        Rather than treating the world as a sequence of fixed
+                        levels, I'm interested in creating a place that
+                        supports discovery, experimentation and reasons to
+                        return.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// world</div>
+                    <h2>Exploration and systems.</h2>
+                    <p>
+                        Procedural generation, different environments,
+                        transportation and environmental features are all
+                        areas of the world design. The project has to work at
+                        both large scale — regions, travel and world
+                        structure — and small scale, such as resources,
+                        encounters and interactable objects.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// gameplay</div>
+                    <h2>Systems that connect.</h2>
+                    <p>
+                        Character progression, combat, abilities, factions,
+                        exploration and world interactions are intended to
+                        influence one another. This makes architecture
+                        important: the code needs to stay understandable as
+                        new mechanics are added.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// multiplayer</div>
+                    <h2>Shared exploration.</h2>
+                    <p>
+                        Multiplayer is part of the project's direction from
+                        the beginning. That affects how game state,
+                        characters, interactions and persistence need to be
+                        structured, with the aim of making shared exploration
+                        feel natural while preserving meaningful individual
+                        progression.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stack">
+
+                <div class="card prose">
+                    <div class="section-label">// technology</div>
+                    <ul class="list">
+                        <li><strong>Engine:</strong> Godot</li>
+                        <li><strong>Language:</strong> C#</li>
+                        <li><strong>Format:</strong> 2D top-down</li>
+                        <li><strong>Genre:</strong> Action RPG</li>
+                        <li><strong>Networking:</strong> Multiplayer-focused</li>
+                        <li><strong>Art:</strong> 2D / pixel-art influenced</li>
+                    </ul>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// learning</div>
+                    <h2>Learning while building.</h2>
+                    <p>
+                        Aetheria gives me a reason to study software
+                        architecture, object-oriented programming, game
+                        systems, persistence and networking while dealing
+                        with the practical problems of a growing codebase.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// long_term</div>
+                    <h2>A project measured in years.</h2>
+                    <p>
+                        The scope is ambitious, so development is about
+                        building solid foundations and learning how to manage
+                        scope rather than rushing through a feature
+                        checklist.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// alongside</div>
+                    <h2>Not the only thing I build.</h2>
+                    <p>
+                        While Aetheria takes shape, Embermark Forgery, Mochi
+                        and the handbooks keep everything else moving —
+                        different problems, same goal of finishing something.
+                    </p>
+                    <div class="button-row">
+                        <a class="button small" href="/projects/">
+                            All projects <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="callout">
+            <div class="section-label">// project_note</div>
+            <h2>More than just a big game.</h2>
+            <p>
+                Aetheria is also an opportunity to learn how to design,
+                structure and maintain a large software project. Every system
+                is teaching me something that can carry into future work —
+                including Mochi, Embermark Forgery and whatever comes next.
+            </p>
+        </div>
+
+        <div class="button-row" style="margin-top: 22px">
+            <a class="button" href="/projects/">← All projects</a>
+            <a class="button primary" href="/contact/">Get in touch</a>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="container footer">
+    <div>© <span id="year">2026</span> Ashton Tink</div>
+
+    <div class="footer-links">
+        <a href="/projects/">Projects</a>
+        <span>·</span>
+        <a href="/about/">About</a>
+        <span>·</span>
+        <a href="/contact/">Contact</a>
+        <span>·</span>
+        <a href="https://github.com/T1nkiePlayz" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="mailto:support@ashtontink.com">support@ashtontink.com</a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

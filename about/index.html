@@ -1,19 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Ashton Tink</title>
-<meta name="description" content="About Ashton Tink, a student and developer from Western Australia.">
-<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-<nav class="navbar"><a class="logo" href="/">ashton<span>.tink</span></a><div class="nav-links"><a class="" href="/projects/">Projects</a><a href="/#latest">Latest</a><a class="active" href="/about/">About</a></div></nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<main class="container"><section class="page-hero"><div class="section-label">// about</div><h1>Hi, I'm <span>Ashton.</span></h1><p>I'm a student and developer from Western Australia who enjoys building things, learning how technology works and turning ideas into projects.</p></section>
-<section><div class="grid2"><div class="card prose"><div class="section-label">// who_i_am</div><h2>A developer who likes to build.</h2><p>My main interests are programming, game development, web development, Linux and computers. I enjoy projects where there is something to figure out rather than simply following a fixed set of instructions.</p><p>That often means experimenting, breaking things, fixing them and learning why the fix worked. Some experiments become proper projects; others are simply useful lessons.</p></div><div class="card prose"><div class="section-label">// quick_facts</div><ul class="list"><li><strong>Location:</strong> Western Australia 🇦🇺</li><li><strong>Education:</strong> Secondary school</li><li><strong>Focus:</strong> Programming & game development</li><li><strong>Engine:</strong> Godot</li><li><strong>Languages:</strong> C#, C++, Python, JavaScript, GDScript</li><li><strong>Art:</strong> Digital & pixel art</li></ul></div></div></section>
-<section class="section"><div class="section-heading"><div class="section-label">// interests</div><h2 class="section-title">The things I keep coming back to.</h2><p>My interests overlap quite a bit. Learning one often makes another more interesting.</p></div><div class="grid3"><div class="card prose"><h2>🎮 Game Development</h2><p>Designing mechanics, building systems, working with engines and learning what it takes to turn an idea into a playable game.</p></div><div class="card prose"><h2>💻 Programming</h2><p>Writing software, learning different languages and thinking about how code should be structured as projects become larger.</p></div><div class="card prose"><h2>🐧 Linux & Systems</h2><p>Using Linux, experimenting with self-hosting, Docker, networking and understanding the systems underneath the software I use.</p></div></div></section>
-<section class="section"><div class="grid2"><div class="card prose"><div class="section-label">// learning</div><h2>I'm still learning — deliberately.</h2><p>I don't consider my current skill set finished. C#, C++, game architecture, networking, software design and larger-scale project organisation are all areas I'm actively developing.</p><p>Projects expose gaps in my knowledge. When I reach something I don't understand, I have a real reason to learn it.</p></div><div class="card prose"><div class="section-label">// education</div><h2>School and beyond.</h2><p>I'm currently completing secondary school while developing technical skills through personal projects and independent learning.</p><p>Personal projects give me a practical way to apply programming and technology concepts beyond coursework.</p></div></div></section>
-<section class="section"><div class="callout"><div class="section-label">// currently</div><h2 style="margin:8px 0;font-size:1.4rem">Building, learning, and figuring out what's next.</h2><p>Game development is the biggest part of my personal work, but I'm interested in seeing where other ideas lead too.</p></div><div class="button-row" style="margin-top:22px"><a class="button primary" href="/projects/">See my projects <span class="arrow">→</span></a><a class="button secondary" href="https://me.ashtontink.com">More about me ↗</a></div></section></main>
-<footer class="container footer"><div>© 2026 Ashton Tink</div><div class="footer-links"><a href="https://github.com/T1nkiePlayz">GitHub</a><span>·</span><a href="mailto:support@ashtontink.com">Contact</a><span>·</span><a href="https://me.ashtontink.com">About Me</a></div></footer>
-</body></html>
+    <title>About — Ashton Tink</title>
+    <meta
+        name="description"
+        content="Ashton Tink is a student and developer from Western Australia building games, desktop software and learning resources — Aetheria, Mochi, Embermark Forgery and more."
+    >
+
+    <link rel="canonical" href="https://www.ashtontink.com/about/">
+
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#07090d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ashton Tink">
+    <meta property="og:title" content="About — Ashton Tink">
+    <meta
+        property="og:description"
+        content="Ashton Tink is a student and developer from Western Australia building games, desktop software and learning resources."
+    >
+    <meta property="og:url" content="https://www.ashtontink.com/about/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="navbar">
+    <a class="logo" href="/">ashton<span>.tink</span></a>
+
+    <div class="nav-links">
+        <a class="nav-home" href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a class="active" href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a class="nav-resume" href="https://me.ashtontink.com/" target="_blank" rel="noopener">Résumé&nbsp;↗</a>
+    </div>
+</nav>
+
+<main id="main" class="container">
+
+    <section class="page-hero">
+        <div class="section-label">// about</div>
+        <h1>Hi, I'm <span>Ashton.</span></h1>
+        <p>
+            I'm a student and developer from Western Australia who enjoys
+            building things, learning how technology really works and
+            turning ideas into projects people can actually use — games,
+            desktop apps, websites and the occasional handbook.
+        </p>
+    </section>
+
+
+    <!-- WHO I AM -->
+
+    <section>
+        <div class="grid2">
+
+            <div class="card prose">
+                <div class="section-label">// who_i_am</div>
+                <h2 class="lead">A developer who likes to build.</h2>
+                <p>
+                    My main interests are programming, game development,
+                    web development, Linux and computers. I enjoy projects
+                    where there is something to figure out rather than simply
+                    following a fixed set of instructions.
+                </p>
+                <p>
+                    That often means experimenting, breaking things, fixing
+                    them and learning why the fix worked. Some experiments
+                    become proper projects — Mochi started exactly that way —
+                    and others are simply useful lessons.
+                </p>
+                <div class="button-row">
+                    <a class="button small" href="/projects/">
+                        See the projects <span class="arrow">→</span>
+                    </a>
+                    <a
+                        class="button small"
+                        href="https://me.ashtontink.com/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Full résumé ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="card prose">
+                <div class="section-label">// quick_facts</div>
+                <ul class="list">
+                    <li><strong>Location:</strong> Western Australia 🇦🇺</li>
+                    <li><strong>Education:</strong> Secondary school</li>
+                    <li><strong>Focus:</strong> Programming &amp; game development</li>
+                    <li><strong>Engines:</strong> Godot, Bevy</li>
+                    <li><strong>Languages:</strong> Rust, C#, C++, TypeScript, Python, JavaScript, GDScript</li>
+                    <li><strong>Tools:</strong> Git, Linux, Docker, Neovim</li>
+                    <li><strong>Art:</strong> Digital &amp; pixel art</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CURRENTLY BUILDING -->
+
+    <section class="section">
+        <div class="section-heading">
+            <div class="section-label">// currently_building</div>
+            <h2 class="section-title">What's on the workbench.</h2>
+            <p>Three things are getting most of my time right now.</p>
+        </div>
+
+        <div class="grid3">
+
+            <div class="card prose">
+                <div class="section-label">01 / Software</div>
+                <h2>Mochi</h2>
+                <p>
+                    A local-first desktop game launcher for Linux and macOS,
+                    built with Tauri 2, Rust and React. Packaging, signing
+                    and documentation included.
+                </p>
+                <div class="button-row">
+                    <a class="button small" href="/projects/mochi/">
+                        Project <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card prose">
+                <div class="section-label">02 / Games</div>
+                <h2>Embermark Forgery</h2>
+                <p>
+                    The smithing game, written in Rust + Bevy — a prototype
+                    you can play today, and my testing ground for game
+                    architecture and Rust.
+                </p>
+                <div class="button-row">
+                    <a class="button small" href="/projects/embermark-forgery/">
+                        Project <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card prose">
+                <div class="section-label">03 / Learning</div>
+                <h2>The handbooks</h2>
+                <p>
+                    Rust and Java/Kotlin handbooks written to learn the
+                    languages properly — both live, both free, both one
+                    dependency-free page.
+                </p>
+                <div class="button-row">
+                    <a class="button small" href="/projects/rust-handbook/">
+                        Rust <span class="arrow">→</span>
+                    </a>
+                    <a class="button small" href="/projects/java-handbook/">
+                        Java <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="section">
+        <div class="section-heading">
+            <div class="section-label">// skills</div>
+            <h2 class="section-title">Tools I reach for.</h2>
+            <p>
+                Languages, engines and technologies I'm learning and
+                working with — the list changes as projects demand more of
+                it.
+            </p>
+        </div>
+
+        <div class="grid3">
+
+            <div class="card prose">
+                <h2>💻 Programming</h2>
+                <div class="skill-list">
+                    <span class="skill">Rust</span>
+                    <span class="skill">C#</span>
+                    <span class="skill">C++</span>
+                    <span class="skill">TypeScript</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">GDScript</span>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                </div>
+            </div>
+
+            <div class="card prose">
+                <h2>🎮 Game development</h2>
+                <div class="skill-list">
+                    <span class="skill">Godot</span>
+                    <span class="skill">Bevy</span>
+                    <span class="skill">Game design</span>
+                    <span class="skill">2D systems</span>
+                    <span class="skill">Multiplayer</span>
+                    <span class="skill">Aseprite</span>
+                    <span class="skill">Pixel art</span>
+                </div>
+            </div>
+
+            <div class="card prose">
+                <h2>🛠️ Tools &amp; systems</h2>
+                <div class="skill-list">
+                    <span class="skill">Git</span>
+                    <span class="skill">GitHub</span>
+                    <span class="skill">Linux</span>
+                    <span class="skill">Tauri</span>
+                    <span class="skill">Docker</span>
+                    <span class="skill">Neovim</span>
+                    <span class="skill">Networking</span>
+                    <span class="skill">Self-hosting</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- INTERESTS -->
+
+    <section class="section">
+        <div class="section-heading">
+            <div class="section-label">// interests</div>
+            <h2 class="section-title">The things I keep coming back to.</h2>
+            <p>My interests overlap quite a bit. Learning one often makes another more interesting.</p>
+        </div>
+
+        <div class="grid3">
+            <div class="card prose">
+                <h2>🎮 Game development</h2>
+                <p>
+                    Designing mechanics, building systems, working with
+                    engines and learning what it takes to turn an idea into a
+                    playable game.
+                </p>
+            </div>
+
+            <div class="card prose">
+                <h2>💻 Programming</h2>
+                <p>
+                    Writing software, learning different languages and
+                    thinking about how code should be structured as projects
+                    become larger.
+                </p>
+            </div>
+
+            <div class="card prose">
+                <h2>🐧 Linux &amp; systems</h2>
+                <p>
+                    Using Linux, experimenting with self-hosting, Docker and
+                    networking, and understanding the systems underneath the
+                    software I use every day.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LEARNING & EDUCATION -->
+
+    <section class="section">
+        <div class="grid2">
+
+            <div class="card prose">
+                <div class="section-label">// learning</div>
+                <h2 class="lead">I'm still learning — deliberately.</h2>
+                <p>
+                    I don't consider my current skill set finished. Rust,
+                    software architecture, networking, packaging, rendering
+                    and large-scale project organisation are all areas I'm
+                    actively developing.
+                </p>
+                <p>
+                    Projects expose gaps in my knowledge. When I reach
+                    something I don't understand, I have a real reason to
+                    learn it — and a handbook to write once I do.
+                </p>
+            </div>
+
+            <div class="card prose">
+                <div class="section-label">// education</div>
+                <h2 class="lead">School and beyond.</h2>
+                <p>
+                    I'm currently completing secondary school while
+                    developing technical skills through personal projects and
+                    independent learning, including the Academic Extension
+                    program.
+                </p>
+                <p>
+                    Personal projects give me a practical way to apply
+                    programming and technology concepts beyond coursework —
+                    and the Soccer Academy alongside it keeps me honest about
+                    time management.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CALLOUT -->
+
+    <section class="section">
+        <div class="callout">
+            <div class="section-label">// currently</div>
+            <h2>Building, learning, and figuring out what's next.</h2>
+            <p>
+                Game development is the biggest part of my personal work, but
+                desktop software and teaching material have turned out to be
+                just as interesting. If you want the short version, the
+                résumé covers it — otherwise, start with the projects.
+            </p>
+        </div>
+
+        <div class="button-row" style="margin-top: 22px">
+            <a class="button primary" href="/projects/">
+                See my projects <span class="arrow">→</span>
+            </a>
+            <a class="button" href="https://me.ashtontink.com/" target="_blank" rel="noopener">
+                Full résumé ↗
+            </a>
+            <a class="button" href="/contact/">Get in touch</a>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="container footer">
+    <div>© <span id="year">2026</span> Ashton Tink</div>
+
+    <div class="footer-links">
+        <a href="/projects/">Projects</a>
+        <span>·</span>
+        <a href="/about/">About</a>
+        <span>·</span>
+        <a href="/contact/">Contact</a>
+        <span>·</span>
+        <a href="https://github.com/T1nkiePlayz" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="mailto:support@ashtontink.com">support@ashtontink.com</a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

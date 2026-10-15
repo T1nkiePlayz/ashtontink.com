@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rust Handbook — Ashton Tink</title>
+    <meta
+        name="description"
+        content="A visual, deep-dive handbook for learning Rust from absolute zero: 21 chapters, 88 annotated examples, 24 reference tables and a self-quiz, in one dependency-free page."
+    >
+
+    <link rel="canonical" href="https://www.ashtontink.com/projects/rust-handbook/">
+
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#07090d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ashton Tink">
+    <meta property="og:title" content="Rust Handbook — Ashton Tink">
+    <meta
+        property="og:description"
+        content="A visual, deep-dive handbook for learning Rust from absolute zero: 21 chapters, 88 annotated examples, 24 reference tables and a self-quiz, in one dependency-free page."
+    >
+    <meta property="og:url" content="https://www.ashtontink.com/projects/rust-handbook/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="navbar">
+    <a class="logo" href="/">ashton<span>.tink</span></a>
+
+    <div class="nav-links">
+        <a class="nav-home" href="/">Home</a>
+        <a class="active" href="/projects/">Projects</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a class="nav-resume" href="https://me.ashtontink.com/" target="_blank" rel="noopener">Résumé&nbsp;↗</a>
+    </div>
+</nav>
+
+<main id="main" class="container">
+
+    <section class="page-hero">
+        <div class="section-label">// project / 05</div>
+        <h1><span>Rust Handbook.</span></h1>
+        <p>
+            <em>Rust from Zero</em> — a visual, deep-dive handbook for
+            learning Rust from absolute zero, taking you from installing the
+            toolchain all the way through unsafe FFI, with a strong emphasis
+            on the concepts that make Rust Rust: ownership, borrowing,
+            lifetimes and fearless concurrency.
+        </p>
+
+        <div class="tags">
+            <span class="tag">Live</span>
+            <span class="tag">Rust</span>
+            <span class="tag">Documentation</span>
+            <span class="tag">21 chapters</span>
+            <span class="tag">GPL-3.0</span>
+        </div>
+
+        <div class="meta">
+            <div class="card"><span>Type</span><strong>Handbook</strong></div>
+            <div class="card"><span>Chapters</span><strong>21</strong></div>
+            <div class="card"><span>Examples</span><strong>88 annotated</strong></div>
+            <div class="card"><span>Self-quiz</span><strong>14 questions</strong></div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="banner rust">
+            <div class="banner-word">RUST</div>
+        </div>
+
+        <div class="grid2">
+
+            <div class="stack">
+
+                <div class="card prose">
+                    <div class="section-label">// overview</div>
+                    <h2 class="lead">Written to actually understand it.</h2>
+                    <p>
+                        I wrote this while learning Rust, because reading a
+                        chapter and writing down what you understood are two
+                        very different things. Everything I had to stop and
+                        re-read became a section; everything that confused me
+                        the first time got an annotated example.
+                    </p>
+                    <p>
+                        It is a single, self-contained page: no framework, no
+                        build step, no external assets. Open it, search it,
+                        keep it in a tab.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// contents</div>
+                    <h2>What's inside.</h2>
+                    <ul class="list">
+                        <li><strong>Foundations:</strong> what Rust is and why it exists, installation and your first program, variables, mutability, types, functions and control flow.</li>
+                        <li><strong>The heart of it:</strong> ownership and borrowing, lifetimes, structs, enums, pattern matching, collections and strings, error handling without exceptions.</li>
+                        <li><strong>Abstraction:</strong> generics and traits, modules and crates, closures and iterators, smart pointers and interior mutability.</li>
+                        <li><strong>Going further:</strong> fearless concurrency, unsafe Rust and FFI, tooling, testing and documentation, performance and how Rust compares.</li>
+                        <li><strong>Reference:</strong> reading the compiler's mind, a realistic study plan and project ideas, cheat sheets, glossary and a self-quiz.</li>
+                    </ul>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// features</div>
+                    <h2>Built for reading, not just displaying.</h2>
+                    <ul class="list">
+                        <li><strong>Dark / light theme</strong> — toggle button or press <kbd>T</kbd>, persisted across visits.</li>
+                        <li><strong>Sticky table of contents</strong> with scroll-spy highlighting and a collapsible drawer on mobile.</li>
+                        <li><strong>Reading progress bar</strong> so you know how far through a chapter you are.</li>
+                        <li><strong>Copy-to-clipboard</strong> on every code sample, plus expand/collapse all for skimming.</li>
+                        <li><strong>14-question self-quiz</strong> with expandable answers at the end.</li>
+                        <li><strong>Responsive and dependency-free</strong> — plain HTML, CSS and JavaScript with zero external assets.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="stack">
+
+                <div class="card prose">
+                    <div class="section-label">// technology</div>
+                    <ul class="list">
+                        <li><strong>Format:</strong> single-page handbook</li>
+                        <li><strong>Stack:</strong> plain HTML, CSS &amp; JavaScript</li>
+                        <li><strong>Build step:</strong> none</li>
+                        <li><strong>Content:</strong> 21 chapters · 88 examples · 24 tables</li>
+                        <li><strong>License:</strong> GPL-3.0</li>
+                        <li><strong>Published:</strong> GitHub Pages + custom domain</li>
+                    </ul>
+                    <div class="button-row">
+                        <a class="button primary small" href="https://rust.handbook.ashtontink.com/" target="_blank" rel="noopener">
+                            Read the handbook ↗
+                        </a>
+                        <a class="button small" href="https://github.com/T1nkiePlayz/Rust-Handbook" target="_blank" rel="noopener">
+                            GitHub ↗
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// audience</div>
+                    <h2>Who it's for.</h2>
+                    <p>
+                        People who have written code in another language and
+                        want to actually get ownership and lifetimes, rather
+                        than fight the borrow checker until it stops
+                        complaining. It also works as a reference to come back
+                        to — the cheat sheets and glossary are there for that.
+                    </p>
+                </div>
+
+                <div class="card prose">
+                    <div class="section-label">// publishing</div>
+                    <h2>No build, no dependencies.</h2>
+                    <p>
+                        The whole handbook is one file served straight from
+                        GitHub Pages at rust.handbook.ashtontink.com. Nothing
+                        to install, nothing to break, and it still works
+                        offline once loaded.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="callout">
+            <div class="section-label">// project_note</div>
+            <h2>The handbook is the study method.</h2>
+            <p>
+                Rust is the language behind Embermark Forgery and the core of
+                Mochi, so this is genuinely my own reference too. Writing it
+                turned "I think I understand borrowing" into "I can explain
+                why this doesn't compile" — which is the whole point.
+            </p>
+        </div>
+
+        <div class="button-row" style="margin-top: 22px">
+            <a class="button" href="/projects/">← All projects</a>
+            <a class="button primary" href="https://rust.handbook.ashtontink.com/" target="_blank" rel="noopener">
+                Read it ↗
+            </a>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="container footer">
+    <div>© <span id="year">2026</span> Ashton Tink</div>
+
+    <div class="footer-links">
+        <a href="/projects/">Projects</a>
+        <span>·</span>
+        <a href="/about/">About</a>
+        <span>·</span>
+        <a href="/contact/">Contact</a>
+        <span>·</span>
+        <a href="https://github.com/T1nkiePlayz" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="mailto:support@ashtontink.com">support@ashtontink.com</a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
